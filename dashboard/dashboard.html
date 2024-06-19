@@ -1,0 +1,52 @@
+<!-- dashboard/dashboard.html (update navigation) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <nav>
+        <a href="../goals/goals.html">Set Goals</a> |
+        <a href="../profile/profile.html">Profile</a> |
+        <a href="../accountability/accountability.html">Accountability Partners</a> |
+        <a href="../auth/login.html" id="logout">Logout</a>
+    </nav>
+    <form id="task-form">
+        <input type="text" id="task-name" placeholder="Task Name" required>
+        <select id="task-priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <input type="date" id="task-due-date" required>
+        <button type="submit">Add Task</button>
+    </form>
+    <div id="task-list"></div>
+
+    <!-- Include Firebase in each HTML file -->
+<script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBxggp0fybIfBWZ9cFN2BKYF6RFA8rrILY",
+    authDomain: "playground-5011e.firebaseapp.com",
+    databaseURL: "https://playground-5011e-default-rtdb.firebaseio.com",
+    projectId: "playground-5011e",
+    storageBucket: "playground-5011e.appspot.com",
+    messagingSenderId: "865280258926",
+    appId: "1:865280258926:web:41ff691eb1e88467f9c77f"
+  };
+// Initialize Firebase
+const app = firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartly - Your All-in-One Goal and Study Management Platform</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Home Page Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Smartly</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#why-choose-us">Why Choose Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#sign-up" class="sign-up-btn">Sign Up</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-icon">
+                <span>&#9776;</span>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Your All-in-One Goal and Study Management Platform</h1>
+                <p>To revolutionize the way individuals plan and manage their goals, tasks, and study plans by integrating all their resources into one platform, generating personalized plans using AI, tracking progress in real-time, and connecting them with accountability partners.</p>
+                <a href="#sign-up" class="cta-btn">TRY FREE</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>Step 1</h3>
+                <p>Description of step 1.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2</h3>
+                <p>Description of step 2.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3</h3>
+                <p>Description of step 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <p>Reasons why users should choose this platform.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <!-- Add images here -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Smartly. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+
+    <!-- Include Firebase in each HTML file -->
+<script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBxggp0fybIfBWZ9cFN2BKYF6RFA8rrILY",
+    authDomain: "playground-5011e.firebaseapp.com",
+    databaseURL: "https://playground-5011e-default-rtdb.firebaseio.com",
+    projectId: "playground-5011e",
+    storageBucket: "playground-5011e.appspot.com",
+    messagingSenderId: "865280258926",
+    appId: "1:865280258926:web:41ff691eb1e88467f9c77f"
+  };
+// Initialize Firebase
+const app = firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const db = firebase.firestore();
+</script>
+
+</body>
+</html>

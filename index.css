@@ -1,0 +1,123 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: url('path-to-your-background-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hero {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    padding: 0.5rem 1rem;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.how-it-works, .why-choose-us, .gallery {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.gallery-images img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        display: none;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .main-nav ul.active {
+        display: flex;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}
