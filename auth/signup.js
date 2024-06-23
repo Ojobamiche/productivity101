@@ -7,7 +7,7 @@ document.getElementById('signup-form').addEventListener('submit', function(event
     auth.createUserWithEmailAndPassword(email, password)
         .then(userCredential => {
             // Signed in
-            const user = userCredential.user;
+            const user = userCredential.user;    
             console.log('User signed up:', user);
             window.location.href = '../dashboard/dashboard.html';
         })
